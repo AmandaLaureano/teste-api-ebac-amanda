@@ -6,6 +6,7 @@ pipeline {
             steps {
                 git branch: 'main', url: 'https://github.com/AmandaLaureano/teste-api-ebac-amanda.git'
                 sh 'npm install'
+                sh 'npm start'
             }
         }
         stage('Test') {
